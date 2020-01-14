@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.css">
+    <title>File viewer</title>
+</head>
+
+<body>
+    <div class="navbar navbar-dark bg-primary">
+        <div class="container">
+            <a href="/" class="navbar-brand">File viewer</a>
+
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class=""></div>
+        <div class="jumbotron">
+            <h1 class="display-3">Files</h1>
+            <p>Display current files for: dndmemes</p>
+            <p class="text-muted">I know css.. (not really)</p>
+        </div>
+        
+        {% for i in range(0, fsLen) %}
+        <div style="max-width: 60rem;" class="card mb-3">
+            <h3 class="card-header"></h3>
+            <div class="card-body">
+                <h5 class="card-title">
+                <a href="https://www.reddit.com{{submissions[i]['url']}}">{{submissions[i]['title']}}</a></h5>
+                <script>console.log("")</script>
+                <h6 class="card-subtitle"></h6>
+                <a href="{{files[i]}}">
+                    {% if '.gif' in files[i] or '.mp4' in files[i] %}
+                    <video width=400 autoplay muted controls>
+                        <source  src="{{files[i]}}" type="video/mp4">
+                    </video>
+                    {% else %}
+                    <img style="height: 30%; width: 30%; display: block;" src="{{files[i]}}" alt="Card image">
+                    {% endif %}
+                </a>
+            </div>
+        </div>
+        {%endfor%}
+    </div>
+</body>
+
+</html>

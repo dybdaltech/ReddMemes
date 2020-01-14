@@ -1,0 +1,55 @@
+{
+    "folder_settings": {
+        "has_setup": false,
+        "custom_dir": ""
+    },
+    "reddit_auth": {
+        "client_id": "",
+        "secret": "",
+        "user_agent": ""
+    },
+    "logging_settings": {
+        "logfile_name": "logfile.log",
+        "custom_dir": ""
+    },
+    "download_settings": {
+        "default_path": ""
+    },
+    "generic_settings": {
+        "skip_existing": false,
+        "display_nsfw": true,
+        "send_discord": true
+    },
+    "subreddits": [{
+        "name": "dndmemes",
+        "nsfw": false,
+        "xxx": "xx",
+        "enabled": false,
+        "tags": ["memes", "funny", "dnd"]
+    }, {
+        "name": "dnd",
+        "nsfw": false,
+        "xxx": "xx",
+        "enabled": false,
+        "tags": ["dnd", "discussions"]
+    }, {
+        "name": "gifs",
+        "nsfw": false,
+        "xxx": "xx",
+        "enabled": false,
+        "tags": ["gifs", "funny"]
+    }, {
+        "name": "dankmemes",
+        "nsfw": true,
+        "xxx": "xx",
+        "enabled": false,
+        "tags": ["memes"]
+    }, {
+        "name": "prequelmemes",
+        "nsfw": false,
+        "xxx": "xx",
+        "enabled": false,
+        "tags": ["memes"]
+    }
+]
+}
